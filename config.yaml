@@ -1,0 +1,16 @@
+experiment:
+  num_qubits: 4
+  seed: 42
+  circuit_depths: [2, 4, 6, 8, 10]
+  monte_carlo_samples: 2000
+
+hardware_noise:
+  single_qubit_depolarizing: 0.005
+  two_qubit_depolarizing: 0.02
+  zz_crosstalk_rate: 0.015
+
+learning:
+  learning_rate: 0.01
+  epochs: 800
+  l1_sparsity_penalty: 0.002
+  overhead_penalty_beta: 0.05
